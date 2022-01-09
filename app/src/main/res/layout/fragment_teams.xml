@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:background="@color/colorOffWhite"
+    tools:context=".ui.fragments.TeamsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_team_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join_new_team"/>
+
+    <TextView
+        android:id="@+id/tv_no_team_items_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/no_team_item_found"
+        android:textAlignment="center"
+        android:textSize="@dimen/no_data_found_textSize"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join_new_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ch.hevs.ig.android.zemrani.teamalers.remaked.utils.customed_widgets.MontSerratButtonBold
+        android:id="@+id/btn_join_new_team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/btn_lbl_join_new_team"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_create_new_team"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="m" />
+
+    <ch.hevs.ig.android.zemrani.teamalers.remaked.utils.customed_widgets.MontSerratButtonBold
+        android:id="@+id/btn_create_new_team"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:paddingTop="@dimen/btn_padding"
+        android:paddingBottom="@dimen/btn_padding"
+        android:text="@string/btn_lbl_create_new_team"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_join_new_team"
+        tools:targetApi="m" />
+</androidx.constraintlayout.widget.ConstraintLayout>

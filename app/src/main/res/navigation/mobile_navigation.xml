@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_teams">
+
+
+
+    <fragment
+        android:id="@+id/navigation_teams"
+        android:name="ch.hevs.ig.android.zemrani.teamalers.remaked.ui.fragments.TeamsFragment"
+        android:label="@string/title_team"
+        tools:layout="@layout/fragment_teams" />
+
+    <fragment
+        android:id="@+id/navigation_alerts"
+        android:name="ch.hevs.ig.android.zemrani.teamalers.remaked.ui.fragments.AlertsFragment"
+        android:label="@string/title_alert"
+        tools:layout="@layout/fragment_alerts" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="ch.hevs.ig.android.zemrani.teamalers.remaked.ui.fragments.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

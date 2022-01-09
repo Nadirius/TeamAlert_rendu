@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:icon="@drawable/ic_baseline_construction_24"
+    app:showAsAction="always"
+    >
+
+    <item android:id="@+id/action_teams_create"
+        android:title="@string/teams_menu_create" />
+
+    <item android:id="@+id/action_teams_join"
+        android:title="@string/teams_menu_join" />
+
+    <item
+        android:id="@+id/action_teams_display"
+        android:title="@string/teams_menu_display">
+        <menu>
+            <item  android:id="@+id/action_teams_display_my_teams"
+                android:title="@string/teams_menu_display_my_teams" />
+            <item  android:id="@+id/action_teams_display_all_teams"
+                android:title="@string/teams_menu_display_all_teams" />
+            <group
+                android:id="@+id/mnugrpLimit"
+                android:checkableBehavior="single"
+                android:title="view mode : " >
+                <item android:id="@+id/show_list"
+                    android:checked="true"
+                    android:title="list" />
+                <item android:id="@+id/show_grid"
+                    android:title="grid" />
+            </group>
+
+        </menu>
+    </item>
+
+
+
+
+</menu>
