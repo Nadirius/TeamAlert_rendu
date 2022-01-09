@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "31672144971",
+    "project_id": "teamalertsremak",
+    "storage_bucket": "teamalertsremak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31672144971:android:7c0dbf3c06f2b8739de9ce",
+        "android_client_info": {
+          "package_name": "ch.hevs.ig.android.zemrani.teamalers.remaked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31672144971-bh63tqm4a5h77c4nbvvcv31fl60ttjco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ch.hevs.ig.android.zemrani.teamalers.remaked",
+            "certificate_hash": "3d832e22603f3a106f108fae04c0b134efd67d5b"
+          }
+        },
+        {
+          "client_id": "31672144971-ksbhtrogsc8fa44rq46r465jgnf0a3ts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChvzUx7AoEyBLeZTEw3pDxVEPdo0oxeDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "31672144971-ksbhtrogsc8fa44rq46r465jgnf0a3ts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.hevs.ig.android.zemrani.teamalers.remaked">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeamAlers">
+        <activity
+            android:name=".ui.activities.alerts_activities.CreateAlertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.teams_activities.AnyTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.teams_activities.MyTeamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" />
+        <activity
+            android:name=".ui.activities.teams_activities.join_new_team.JoinNewTeamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.DashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.teams_activities.create_new_team.CreateNewTeamActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.auth_activities.UserProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.auth_activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.auth_activities.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" /> <!-- ///////////////////////////////////////////////////////////////////// -->
+        <activity
+            android:name=".ui.activities.auth_activities.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamAlers.NoActionBar" />
+    </application>
+
+</manifest>
